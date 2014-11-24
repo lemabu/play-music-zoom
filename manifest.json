@@ -1,0 +1,26 @@
+{
+  "name": "Play Music Zoom",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Change the size of album and artist cards on Play Music",
+  "icons": { "128": "icon_128.png" },
+
+  "permissions": [
+    "http://play.google.com/music/*",
+    "https://play.google.com/music/*"
+  ],
+
+  "web_accessible_resources": [
+    "vulcanized.html",
+    "bower_components/*"
+  ],
+
+
+  "content_scripts" : [
+    {
+      "matches": ["*://play.google.com/music/*"],
+      "js": ["cScript.js"],
+      "css": ["content.css"]
+    }
+  ]
+}

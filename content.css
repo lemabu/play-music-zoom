@@ -1,0 +1,13 @@
+paper-slider {padding-top: 8px;}
+
+paper-slider::shadow #sliderBar::shadow #activeProgress {
+  background-color: #fb8521;
+}
+
+paper-slider::shadow #sliderKnobInner {
+  background-color: #fb8521;
+}
+
+paper-slider[should-display="nope"] {
+  display: none;
+}

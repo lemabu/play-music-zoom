@@ -1,0 +1,19 @@
+{
+  "name": "pmzoom",
+  "version": "0.1",
+  "authors": [
+    "Marcel Buchholz <marcel.buchholz@gmail.com>"
+  ],
+  "main": "cScript.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "paper-slider": "Polymer/paper-slider#~0.5.1"
+  }
+}
