@@ -5,7 +5,7 @@
     "Marcel Buchholz <marcel.buchholz@gmail.com>"
   ],
   "main": "cScript.js",
-  "license": "MIT",
+  "license": "GPL-2.0",
   "ignore": [
     "**/.*",
     "node_modules",
