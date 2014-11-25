@@ -9,7 +9,9 @@ var PMZoom = new function() {
   // Slider will display for play.google.com/music/listen#/artists and play.google.com/music/listen#/albums
   var include_hashes=["#/artists","#/albums"];
 
+  // Max width of card, in px
   var maxCardWidth = 650;
+  // Min width of card, in px
   var minCardWidth = 180;
 
   /*
@@ -38,7 +40,7 @@ var PMZoom = new function() {
     if (startValue && startValue <= maxCardWidth && startValue >= minCardWidth) {
       slider.setAttribute("value", startValue);
     } else {
-      //Start at 180 if localStorage return nothing or nonsense
+      //Start with minCardWidth if localStorage returnis nothing or nonsense
       slider.setAttribute("value", minCardWidth);
       localStorage.setItem("last-zoom-value", minCardWidth);
     }
